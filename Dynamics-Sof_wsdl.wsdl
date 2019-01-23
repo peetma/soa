@@ -23,8 +23,8 @@ xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" name="RoutingService" t
     </wsp:All>
   </wsp:ExactlyOne>
 </wsp:Policy>
-<wsdl:import namespace="http://schemas.microsoft.com/netfx/2009/05/routing" location="http://daxportal-arendus.elion.ee:8070/MicrosoftDynamicsAXAif60/SofAOSStatus/xppservice.svc?wsdl=wsdl0"/>
-<wsdl:import namespace="http://softwerk.ee/elion/SofAOSStatusService" location="http://daxportal-arendus.elion.ee:8070/MicrosoftDynamicsAXAif60/SofAOSStatus/xppservice.svc?wsdl=wsdl1"/>
+<wsdl:import namespace="http://schemas.microsoft.com/netfx/2009/05/routing" location="https://github.com/peetma/soa/blob/master/xppservice.xml?wsdl=wsdl0"/>
+<wsdl:import namespace="http://softwerk.ee/elion/SofAOSStatusService" location="https://github.com/peetma/soa/blob/master/xppservice.xml?wsdl=wsdl1"/>
 <wsdl:types/>
 <wsdl:binding name="serviceEndpoint" type="i0:IRequestReplyRouter">
   <wsp:PolicyReference URI="#serviceEndpoint_policy"/>
