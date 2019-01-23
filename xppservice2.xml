@@ -1,12 +1,12 @@
 <wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://softwerk.ee/elion/SofAOSStatusService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://softwerk.ee/elion/SofAOSStatusService">
 <wsdl:types>
 <xsd:schema targetNamespace="http://softwerk.ee/elion/SofAOSStatusService/Imports">
-<xsd:import schemaLocation="http://daxportal-arendus.elion.ee:8070/MicrosoftDynamicsAXAif60/SofAOSStatus/xppservice.svc?xsd=xsd0" namespace="http://softwerk.ee/elion/SofAOSStatusService"/>
-<xsd:import schemaLocation="http://daxportal-arendus.elion.ee:8070/MicrosoftDynamicsAXAif60/SofAOSStatus/xppservice.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts"/>
-<xsd:import schemaLocation="http://daxportal-arendus.elion.ee:8070/MicrosoftDynamicsAXAif60/SofAOSStatus/xppservice.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault"/>
-<xsd:import schemaLocation="http://daxportal-arendus.elion.ee:8070/MicrosoftDynamicsAXAif60/SofAOSStatus/xppservice.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
-<xsd:import schemaLocation="http://daxportal-arendus.elion.ee:8070/MicrosoftDynamicsAXAif60/SofAOSStatus/xppservice.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-<xsd:import schemaLocation="http://daxportal-arendus.elion.ee:8070/MicrosoftDynamicsAXAif60/SofAOSStatus/xppservice.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services"/>
+<xsd:import schemaLocation="https://github.com/peetma/soa/blob/master/xppservice.xml?xsd=xsd0" namespace="http://softwerk.ee/elion/SofAOSStatusService"/>
+<xsd:import schemaLocation="https://github.com/peetma/soa/blob/master/xppservice.xml?xsd=xsd2" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts"/>
+<xsd:import schemaLocation="https://github.com/peetma/soa/blob/master/xppservice.xml?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault"/>
+<xsd:import schemaLocation="https://github.com/peetma/soa/blob/master/xppservice.xml?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+<xsd:import schemaLocation="https://github.com/peetma/soa/blob/master/xppservice.xml?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+<xsd:import schemaLocation="https://github.com/peetma/soa/blob/master/xppservice.xml?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services"/>
 </xsd:schema>
 </wsdl:types>
 <wsdl:message name="SofAOSStatusServiceGetAOSStatusRequest">
