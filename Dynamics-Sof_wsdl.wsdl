@@ -49,10 +49,10 @@ xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" name="RoutingService" t
 </wsdl:binding>
 <wsdl:service name="RoutingService">
   <wsdl:port name="serviceEndpoint" binding="tns:serviceEndpoint">
-      <soap:address location="http://daxportal-arendus.elion.ee:8070/MicrosoftDynamicsAXAif60/SofAOSStatus/xppservice.svc"/>
+      <soap:address location="https://github.com/peetma/soa/blob/master/xppservice.xml"/>
   </wsdl:port>
   <wsdl:port name="BasicHttpBinding_SofAOSStatusService" binding="tns:BasicHttpBinding_SofAOSStatusService">
-      <soap:address location="http://daxportal-arendus.elion.ee:8070/MicrosoftDynamicsAXAif60/SofAOSStatus/xppservice.svc"/>
+      <soap:address location="https://github.com/peetma/soa/blob/master/xppservice.xml"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
