@@ -6,7 +6,7 @@
 <xsd:import schemaLocation="https://raw.githubusercontent.com/peetma/soa/master/xppservice_xsd4.xml?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault"/>
 <xsd:import schemaLocation="https://raw.githubusercontent.com/peetma/soa/master/xppservice_xsd1.xml?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
 <xsd:import schemaLocation="https://raw.githubusercontent.com/peetma/soa/master/xppservice_xsd3.xml?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-<xsd:import schemaLocation="https://github.com/peetma/soa/blob/master/xppservice_xsd5.xml?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services"/>
+<xsd:import schemaLocation="https://raw.githubusercontent.com/peetma/soa/master/xppservice_xsd5.xml?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services"/>
 </xsd:schema>
 </wsdl:types>
 <wsdl:message name="SofAOSStatusServiceGetAOSStatusRequest">
