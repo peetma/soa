@@ -2,7 +2,7 @@
 <wsdl:types>
 <xsd:schema targetNamespace="http://softwerk.ee/elion/SofAOSStatusService/Imports">
 <xsd:import schemaLocation="https://raw.githubusercontent.com/peetma/soa/master/xppservice_xsd0.xml?xsd=xsd0" namespace="http://softwerk.ee/elion/SofAOSStatusService"/>
-<xsd:import schemaLocation="https://github.com/peetma/soa/blob/master/xppservice_xsd2.xml?xsd=xsd2" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts"/>
+<xsd:import schemaLocation="https://raw.githubusercontent.com/peetma/soa/master/xppservice_xsd2.xml?xsd=xsd2" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts"/>
 <xsd:import schemaLocation="https://github.com/peetma/soa/blob/master/xppservice_xsd4.xml?xsd=xsd4" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault"/>
 <xsd:import schemaLocation="https://raw.githubusercontent.com/peetma/soa/master/xppservice_xsd1.xml?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
 <xsd:import schemaLocation="https://github.com/peetma/soa/blob/master/xppservice_xsd3.xml?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
