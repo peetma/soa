@@ -1,0 +1,33 @@
+version: "3.5"
+services:
+  event-service-dashboard:
+    container_name: event-service-dashboard
+    image: event-service-dashboard:latest
+    ports:
+      - 3002:80
+    volumes:
+      - ./nginx/http-nginx-with-backend-proxy.conf:/etc/nginx/templates/default.conf.template
+    restart: "no"
+    environment:
+      # Angular app config
+      PORTAL_URL: "http://eesti.ee"
+      PORTAL_API_URL: "http://localhost:3002/eesti_ee/api"
+      TIMUR_URL: "https://www.arendus.eesti.ee/timur"
+      TIMUR_REGISTRATION_ID: "govsso"
+      TIMUR_CALLBACK_URL: "https://local.arendus.eesti.ee:4200/syndmusteenused/auth/callback"
+      TIMUR_MINUTES_BEFORE_SHOWING_SESSION_ENDING_MODAL: 5
+      API_URL: "http://localhost:3002/syndmusteenused"
+      # Angular app MFA config
+      CUSTOMER_UI_URL: "http://localhost:3002/syndmusteenused/mfa/customer-ui"
+      ADMIN_UI_URL: "http://localhost:3002/syndmusteenused/mfa/customer-ui"
+      # Nginx config
+      ################
+      NGINX_PROXY_API_HOST: "https://sundmusteenus-dev.eesti.ee/syndmusteenused/api/"
+      NGINX_PROXY_EESTI_EE_API_HOST: "https://www.arendus.eesti.ee/api/"
+      # Start it in event-service-customer-ui docker-compose
+      NGINX_PROXY_MFA_CUSTOMER_UI_HOST: "http://event-service-customer-ui:80/syndmusteenused/mfa/customer-ui"
+      # Local api solution isn't working properly, you'd need access from the docker to host
+      #NGINX_PROXY_API_HOST: "http://localhost:8100/event-service-status-panel/api/"
+networks:
+  default:
+    name: sun-network
