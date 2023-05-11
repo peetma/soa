@@ -1,0 +1,4346 @@
+{
+	"info": {
+		"_postman_id": "61dd1b22-4fd4-4f37-9a33-aa76dcb2ebd0",
+		"name": "Sündmusteenused",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7156398"
+	},
+	"item": [
+		{
+			"name": "ARVA",
+			"item": [
+				{
+					"name": "Näitepäringud dokumentatsioonist",
+					"item": [
+						{
+							"name": "Artiklite/kausta puu päring",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGkiOjM1LCJncnAiOjM3LCJpYXQiOjE2NTgyMzUzODksImV4cCI6MTY4OTc5Mjk4OSwiYXVkIjoidXJuOndpa2kuanMiLCJpc3MiOiJ1cm46d2lraS5qcyJ9.teDa_0aWXbITzvdWIANQIJrgrojHV3w0B2bga1zwLpja_rVLBoITwBTZ8J0OymMrbSLeySs-YY29jMtafixZ1F8f6Lki5wBai0hsjUcj2yJtoHbkxNtOd5G9DX6s2lP-T90K3D2LJISa9NKlH1kVsOdUKFgGVURr22oYNxE8oe2KjCnFDTuNhdeFaH3GW7VdZULWlwo0XY6AKVrs-D9fdGUiieoJ4o19iZqoB_7jz-RrSJ_Jv6yW1neqV4YHoFPjbFd_F05Uv-BVjiz8Ycoz6n5ool-d3wrc4ZRkbpzqAtWtnXnNkawCTnFAOkVZiFezqFbKKqli1gy-RG9mr8G-gQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Road-Client",
+										"value": "ee-dev/COM/10391131/event-service-status-panel",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "query {\r\n  pages {\r\n    tree(\r\n      \tparent: 11\r\n      \tmode: ALL\r\n      \tlocale: \"et\"\r\n      \tincludeAncestors: true\r\n    ) {\r\n      id\r\n      locale\r\n      depth\r\n      title\r\n      isFolder\r\n      parent\r\n      pageId\r\n    }\r\n  }\r\n}\r\n",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/artiklivaramu/arva/",
+									"protocol": "https",
+									"host": [
+										"xtee6-arendus",
+										"webmedia",
+										"int"
+									],
+									"path": [
+										"r1",
+										"ee-dev",
+										"GOV",
+										"70006317",
+										"artiklivaramu",
+										"arva",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Artikli vaatamise päring",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGkiOjM1LCJncnAiOjM3LCJpYXQiOjE2NTgyMzUzODksImV4cCI6MTY4OTc5Mjk4OSwiYXVkIjoidXJuOndpa2kuanMiLCJpc3MiOiJ1cm46d2lraS5qcyJ9.teDa_0aWXbITzvdWIANQIJrgrojHV3w0B2bga1zwLpja_rVLBoITwBTZ8J0OymMrbSLeySs-YY29jMtafixZ1F8f6Lki5wBai0hsjUcj2yJtoHbkxNtOd5G9DX6s2lP-T90K3D2LJISa9NKlH1kVsOdUKFgGVURr22oYNxE8oe2KjCnFDTuNhdeFaH3GW7VdZULWlwo0XY6AKVrs-D9fdGUiieoJ4o19iZqoB_7jz-RrSJ_Jv6yW1neqV4YHoFPjbFd_F05Uv-BVjiz8Ycoz6n5ool-d3wrc4ZRkbpzqAtWtnXnNkawCTnFAOkVZiFezqFbKKqli1gy-RG9mr8G-gQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Road-Client",
+										"value": "ee-dev/COM/10391131/event-service-status-panel",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "query {\r\n  pages {\r\n    single(id: 37) {\r\n      id\r\n      hash\r\n      locale\r\n      title\r\n      content\r\n      tags {\r\n        tag\r\n        title\r\n      }\r\n    }\r\n  }\r\n}\r\n",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/artiklivaramu/arva/",
+									"protocol": "https",
+									"host": [
+										"xtee6-arendus",
+										"webmedia",
+										"int"
+									],
+									"path": [
+										"r1",
+										"ee-dev",
+										"GOV",
+										"70006317",
+										"artiklivaramu",
+										"arva",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pageTreeQuery",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGkiOjM0LCJncnAiOjcsImlhdCI6MTY2NTM5ODgzNCwiZXhwIjoxNjk2OTU2NDM0LCJhdWQiOiJ1cm46d2lraS5qcyIsImlzcyI6InVybjp3aWtpLmpzIn0.VzIGPNe0gn0ITREDP3NoQKzDzm2zmPmh8_VoEUHwYOqpeA0UoFWZZouN6HIVFG0vwNm5SQJWz5fRj8a33iE_cLxsocWa25Ou9hKhQrxwxNOHxqe874HO2DT2isUAIyNGReDo_UYLQn336ftjHxX0pZBPBzlO4WnxRDmxZ0vn81N9YSP5qd_eZl7gGFcwiR_VL9OkZ1VlM_YwjIOBp3vlNDwEfyU6jVLcaKWPZqBICIlNB300yL1kQpt-1FyQYPlEAoEM6Hn6bx7WjEEv1CdOennQQNxYTdyhileBBJ4xsIbCvfILweiVXdFzmSUF1Ie_foYJcvDAEzWmaLa7XSqJaA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Road-Client",
+										"value": "ee-dev/COM/10391131/event-service-status-panel",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "query pageTreeQuery($locale: String!) {\r\n  pages {\r\n    tree(\r\n      parent: 11\r\n      mode: ALL\r\n      locale: $locale\r\n      includeAncestors: true\r\n    ) {\r\n      id\r\n      path\r\n      title\r\n      isFolder\r\n      pageId\r\n      parent\r\n      locale\r\n      __typename\r\n    }\r\n    __typename\r\n  }\r\n}\r\n",
+										"variables": "{\r\n  \"locale\": \"et\",\r\n  \"limit\": 5,\r\n  \"tags\": \"peretoetus\",\r\n  \"orderBy\": \"TITLE\"\r\n}\r\n"
+									}
+								},
+								"url": {
+									"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/artiklivaramu/arva/",
+									"protocol": "https",
+									"host": [
+										"xtee6-arendus",
+										"webmedia",
+										"int"
+									],
+									"path": [
+										"r1",
+										"ee-dev",
+										"GOV",
+										"70006317",
+										"artiklivaramu",
+										"arva",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "allTagsQuery",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Road-Client",
+										"value": "ee-dev/COM/10391131/event-service-status-panel",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "query allTagsQuery {\r\n  pages {\r\n    tags {\r\n      tag\r\n      title\r\n      __typename\r\n    }\r\n    __typename\r\n  }\r\n}\r\n",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/artiklivaramu/arva/",
+									"protocol": "https",
+									"host": [
+										"xtee6-arendus",
+										"webmedia",
+										"int"
+									],
+									"path": [
+										"r1",
+										"ee-dev",
+										"GOV",
+										"70006317",
+										"artiklivaramu",
+										"arva",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pagesByTagsQuery",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Road-Client",
+										"value": "ee-dev/COM/10391131/event-service-status-panel",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "query pagesByTagsQuery(\r\n  $locale: String!\r\n  $limit: Int\r\n  $orderBy: PageOrderBy\r\n  $orderByDirection: PageOrderByDirection\r\n  $tags: [String!]\r\n) {\r\n  pages {\r\n    list(\r\n      limit: $limit\r\n      orderBy: $orderBy\r\n      orderByDirection: $orderByDirection\r\n      tags: $tags\r\n      locale: $locale\r\n    ) {\r\n      id\r\n      locale\r\n      path\r\n      title\r\n      description\r\n      createdAt\r\n      updatedAt\r\n      tags\r\n      __typename\r\n    }\r\n    __typename\r\n  }\r\n}\r\n",
+										"variables": "{\r\n  \"locale\": \"et\",\r\n  \"limit\": 5,\r\n  \"tags\": \"peretoetus\",\r\n  \"orderBy\": \"TITLE\"\r\n}"
+									}
+								},
+								"url": {
+									"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/artiklivaramu/arva/",
+									"protocol": "https",
+									"host": [
+										"xtee6-arendus",
+										"webmedia",
+										"int"
+									],
+									"path": [
+										"r1",
+										"ee-dev",
+										"GOV",
+										"70006317",
+										"artiklivaramu",
+										"arva",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Tagiga \"sündmusteenused\" artiklid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGkiOjM0LCJncnAiOjcsImlhdCI6MTY2NTM5ODgzNCwiZXhwIjoxNjk2OTU2NDM0LCJhdWQiOiJ1cm46d2lraS5qcyIsImlzcyI6InVybjp3aWtpLmpzIn0.VzIGPNe0gn0ITREDP3NoQKzDzm2zmPmh8_VoEUHwYOqpeA0UoFWZZouN6HIVFG0vwNm5SQJWz5fRj8a33iE_cLxsocWa25Ou9hKhQrxwxNOHxqe874HO2DT2isUAIyNGReDo_UYLQn336ftjHxX0pZBPBzlO4WnxRDmxZ0vn81N9YSP5qd_eZl7gGFcwiR_VL9OkZ1VlM_YwjIOBp3vlNDwEfyU6jVLcaKWPZqBICIlNB300yL1kQpt-1FyQYPlEAoEM6Hn6bx7WjEEv1CdOennQQNxYTdyhileBBJ4xsIbCvfILweiVXdFzmSUF1Ie_foYJcvDAEzWmaLa7XSqJaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Road-Client",
+								"value": "ee-dev/COM/10391131/event-service-status-panel",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query pagesByTagsQuery(\r\n  $locale: String!\r\n  $limit: Int\r\n  $orderBy: PageOrderBy\r\n  $orderByDirection: PageOrderByDirection\r\n  $tags: [String!]\r\n) {\r\n  pages {\r\n    list(\r\n      limit: $limit\r\n      orderBy: $orderBy\r\n      orderByDirection: $orderByDirection\r\n      tags: $tags\r\n      locale: $locale\r\n    ) {\r\n      id\r\n      locale\r\n      path\r\n      title\r\n      description\r\n      createdAt\r\n      updatedAt\r\n      tags\r\n      __typename\r\n    }\r\n    __typename\r\n  }\r\n}\r\n",
+								"variables": "{\r\n  \"locale\": \"et\",\r\n  \"tags\": \"abiellumine\",\r\n  \"orderBy\": \"CREATED\"\r\n}"
+							}
+						},
+						"url": {
+							"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/artiklivaramu/arva/",
+							"protocol": "https",
+							"host": [
+								"xtee6-arendus",
+								"webmedia",
+								"int"
+							],
+							"path": [
+								"r1",
+								"ee-dev",
+								"GOV",
+								"70006317",
+								"artiklivaramu",
+								"arva",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Linkide päring",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Road-Client",
+								"value": "ee-dev/COM/10391131/event-service-status-panel",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query {\r\n  pages {\r\n    links(\r\n      locale: \"et\"\r\n    ) {\r\n      id\r\n      path\r\n      title\r\n      links \r\n    }\r\n  }\r\n}\r\n",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/artiklivaramu/arva/",
+							"protocol": "https",
+							"host": [
+								"xtee6-arendus",
+								"webmedia",
+								"int"
+							],
+							"path": [
+								"r1",
+								"ee-dev",
+								"GOV",
+								"70006317",
+								"artiklivaramu",
+								"arva",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Artikli vaatamise päring muutujaga",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGkiOjM1LCJncnAiOjM3LCJpYXQiOjE2NTgyMzUzODksImV4cCI6MTY4OTc5Mjk4OSwiYXVkIjoidXJuOndpa2kuanMiLCJpc3MiOiJ1cm46d2lraS5qcyJ9.teDa_0aWXbITzvdWIANQIJrgrojHV3w0B2bga1zwLpja_rVLBoITwBTZ8J0OymMrbSLeySs-YY29jMtafixZ1F8f6Lki5wBai0hsjUcj2yJtoHbkxNtOd5G9DX6s2lP-T90K3D2LJISa9NKlH1kVsOdUKFgGVURr22oYNxE8oe2KjCnFDTuNhdeFaH3GW7VdZULWlwo0XY6AKVrs-D9fdGUiieoJ4o19iZqoB_7jz-RrSJ_Jv6yW1neqV4YHoFPjbFd_F05Uv-BVjiz8Ycoz6n5ool-d3wrc4ZRkbpzqAtWtnXnNkawCTnFAOkVZiFezqFbKKqli1gy-RG9mr8G-gQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Road-Client",
+								"value": "ee-dev/COM/10391131/event-service-status-panel",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query singlePageQuery(\r\n  $id: Int!\r\n) {\r\n  pages {\r\n    single(id: $id) {\r\n      id\r\n      hash\r\n      locale\r\n      title\r\n      description\r\n      content\r\n      createdAt\r\n      updatedAt\r\n      path\r\n      isPrivate\r\n      isPublished\r\n      privateNS\r\n      publishStartDate\r\n      publishEndDate\r\n      render\r\n      contentType\r\n      authorId\r\n      authorName\r\n      authorEmail\r\n      creatorId\r\n      creatorName\r\n      creatorEmail\r\n      editor\r\n      tags {\r\n        tag\r\n        title\r\n      }\r\n    }\r\n  }\r\n}\r\n",
+								"variables": "{\r\n    \"id\": 37\r\n}"
+							}
+						},
+						"url": {
+							"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/artiklivaramu/arva/",
+							"protocol": "https",
+							"host": [
+								"xtee6-arendus",
+								"webmedia",
+								"int"
+							],
+							"path": [
+								"r1",
+								"ee-dev",
+								"GOV",
+								"70006317",
+								"artiklivaramu",
+								"arva",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Artikli ajaloo päring",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGkiOjM1LCJncnAiOjM3LCJpYXQiOjE2NTgyMzUzODksImV4cCI6MTY4OTc5Mjk4OSwiYXVkIjoidXJuOndpa2kuanMiLCJpc3MiOiJ1cm46d2lraS5qcyJ9.teDa_0aWXbITzvdWIANQIJrgrojHV3w0B2bga1zwLpja_rVLBoITwBTZ8J0OymMrbSLeySs-YY29jMtafixZ1F8f6Lki5wBai0hsjUcj2yJtoHbkxNtOd5G9DX6s2lP-T90K3D2LJISa9NKlH1kVsOdUKFgGVURr22oYNxE8oe2KjCnFDTuNhdeFaH3GW7VdZULWlwo0XY6AKVrs-D9fdGUiieoJ4o19iZqoB_7jz-RrSJ_Jv6yW1neqV4YHoFPjbFd_F05Uv-BVjiz8Ycoz6n5ool-d3wrc4ZRkbpzqAtWtnXnNkawCTnFAOkVZiFezqFbKKqli1gy-RG9mr8G-gQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Road-Client",
+								"value": "ee-dev/COM/10391131/event-service-status-panel",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query {\r\n  pages {\r\n    history(\r\n      id: 36\r\n    ) {\r\n      trail {\r\n          versionId\r\n          versionDate\r\n          authorId\r\n          authorName\r\n          actionType\r\n          valueBefore\r\n          valueAfter\r\n      }\r\n      total\r\n    }\r\n  }\r\n}\r\n",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/artiklivaramu/arva/",
+							"protocol": "https",
+							"host": [
+								"xtee6-arendus",
+								"webmedia",
+								"int"
+							],
+							"path": [
+								"r1",
+								"ee-dev",
+								"GOV",
+								"70006317",
+								"artiklivaramu",
+								"arva",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Versiooni päring",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGkiOjM1LCJncnAiOjM3LCJpYXQiOjE2NTgyMzUzODksImV4cCI6MTY4OTc5Mjk4OSwiYXVkIjoidXJuOndpa2kuanMiLCJpc3MiOiJ1cm46d2lraS5qcyJ9.teDa_0aWXbITzvdWIANQIJrgrojHV3w0B2bga1zwLpja_rVLBoITwBTZ8J0OymMrbSLeySs-YY29jMtafixZ1F8f6Lki5wBai0hsjUcj2yJtoHbkxNtOd5G9DX6s2lP-T90K3D2LJISa9NKlH1kVsOdUKFgGVURr22oYNxE8oe2KjCnFDTuNhdeFaH3GW7VdZULWlwo0XY6AKVrs-D9fdGUiieoJ4o19iZqoB_7jz-RrSJ_Jv6yW1neqV4YHoFPjbFd_F05Uv-BVjiz8Ycoz6n5ool-d3wrc4ZRkbpzqAtWtnXnNkawCTnFAOkVZiFezqFbKKqli1gy-RG9mr8G-gQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Road-Client",
+								"value": "ee-dev/COM/10391131/event-service-status-panel",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query {\r\n  pages {\r\n    version(\r\n      pageId: 36\r\n      versionId: 53\r\n    ) {\r\n      action\r\n      authorId\r\n      authorName\r\n      content\r\n      contentType\r\n      createdAt\r\n      versionDate\r\n      description\r\n      editor\r\n      isPrivate\r\n      isPublished\r\n      pageId\r\n      path\r\n      publishStartDate\r\n      publishEndDate\r\n      tags\r\n      title\r\n      versionId\r\n    }\r\n  }\r\n}\r\n",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/artiklivaramu/arva/",
+							"protocol": "https",
+							"host": [
+								"xtee6-arendus",
+								"webmedia",
+								"int"
+							],
+							"path": [
+								"r1",
+								"ee-dev",
+								"GOV",
+								"70006317",
+								"artiklivaramu",
+								"arva",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Artiklite otsing",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGkiOjM1LCJncnAiOjMsImlhdCI6MTY2NTU2NjcyNiwiZXhwIjoxNjk3MTI0MzI2LCJhdWQiOiJ1cm46d2lraS5qcyIsImlzcyI6InVybjp3aWtpLmpzIn0.mBWZdF8JLSKQ6-fPk6qIfGI4vNs6GzoF2gY8T-MA_eGo4xp7PpvvmD-S__ZQmnvosIzltSs9r0uVzeaOdka8ak3zcJWYFEUPH65sHy-KaejNt0altzaW4qGjR2iJ-AMzT1NzbK4wdKpy7J0pwzKKAvhT5_gHLSP9mGWxSuak3maL-7pTfVe0NNIAUin7xDaqj0cweTpVwCT_mfVfnGrX5QNXyW96N9iKnsjnCgO1HdFrpzIOAGehaBrGxmQfpKD9RudCP0hVipkyRLf1MX-uAtN3nVkle3clO4iSUI7f0Q9Q2E3l_6nAPSxVOG3_vuY9V7XyySphVGV7lfzmTPxGUw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Road-Client",
+								"value": "ee-dev/COM/10391131/event-service-status-panel",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query {\r\n  pages {\r\n    list(\r\n      orderBy: ID\r\n      orderByDirection: ASC\r\n    ) {\r\n      id\r\n      locale\r\n      title\r\n      description\r\n      contentType\r\n      path\r\n      tags \r\n    }\r\n  }\r\n}\r\n",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/artiklivaramu/arva/",
+							"protocol": "https",
+							"host": [
+								"xtee6-arendus",
+								"webmedia",
+								"int"
+							],
+							"path": [
+								"r1",
+								"ee-dev",
+								"GOV",
+								"70006317",
+								"artiklivaramu",
+								"arva",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin-api",
+			"item": [
+				{
+					"name": "http://localhost:8103/event-service-admin-api/admin/v1/localization/et",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "_pk_id.48.7492=6d4f88a7f22c3d25.1660632290.; logged_out_marketing_header_id=eyJfcmFpbHMiOnsibWVzc2FnZSI6IklqTTBNVE14TVRFeUxXSmlNRGt0TkdGbE9DMWlaR1V4TFROak9XTXdOVGczT0RnME1pST0iLCJleHAiOm51bGwsInB1ciI6ImNvb2tpZS5sb2dnZWRfb3V0X21hcmtldGluZ19oZWFkZXJfaWQifX0%3D--8ec9fc902356cf2a09d3b4cfb5d4f041cfd89cd2; JWT_EXP_TIME=1669731576000; PHPSESSID=5ffcb98a502842f4bb5d70852c3854e5; JWTTOKEN=eyJhbGciOiJQUzI1NiJ9.eyJwZXJzb25hbENvZGUiOiJFRTYwMDAxMDE3ODY5Iiwic3ViIjoiRUU2MDAwMTAxNzg2OSIsImxhc3ROYW1lIjoiVEVTVE5VTUJFUiIsImlzcyI6ImFyZW5kdXMuZWVzdGkuZWUiLCJyZXByZXNlbnRlZFBhcnR5Ijp7InR5cGUiOiJDSVRJWkVOIiwiaWQiOjAsImNvZGUiOiJFRTYwMDAxMDE3ODY5In0sImZpcnN0TmFtZSI6IkVJRDIwMTYiLCJuYmYiOjE2NzI3NDY4NjcsImF1dGhlbnRpY2F0ZWRBcyI6IkVFNjAwMDEwMTc4NjkiLCJleHAiOjE2NzI3NDg2NjcsImF1dGhNZXRob2QiOiJtSUQiLCJpYXQiOjE2NzI3NDY4NjcsImdvdnNzb1NpZCI6IjI0Njc0MjFkLWUxMmYtNGQyYi05NmQ1LTJlODEwYWVlZjkxYiIsImp0aSI6ImYxMmM1YzNkLTc0NjAtNDQzNS1hMDk2LTA5MGU3YzlmOTE3OSIsImhhc2giOiJiMDc4YjBlZjdhYjQ0MWU5YjQyNzEzNjNjMGYxMDlmNGUyODg5MTMxNjc3MjRmNWI4Yjg2MWQ0Yzg1YmQ1MjAwIn0.EB2mhrtvdYkFUiCon8AV94Pkkc4NJF5VaMmbHx_HVasq_i-w53wQI01waQKILZG0J9WxrBoP-pYS8xiDdUvBXWIvBTBLuNTPTrxeK9HvgwyZz2O7hoUcI7Ud9iH_3BBVwdPH4d7f2mg7m30xKT7oPL5TAnuCtrQzjUU1nIxyaz5COC7WWUx0SaDXsMAZgRqFryrVoRLP0ozstuXdWjkDr77MAlu0It5PjFLIzsDGutgxuUVW0UUsLAQx2GT4l6_jPjjaWb3myz2EXaerlNGin5ErF5A0pBiteNR_nr0rRVMRBZuCXhZIZBDVFrMdPA6KDAUVRY_gqVI8nReeYL-nCA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8103/event-service-admin-api/admin/v1/localization/et",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8103",
+							"path": [
+								"event-service-admin-api",
+								"admin",
+								"v1",
+								"localization",
+								"et"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8103/event-service-admin-api/admin/v1/localization/et Copy",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "JWTTOKEN",
+								"value": "eyJhbGciOiJQUzI1NiJ9.eyJwZXJzb25hbENvZGUiOiJFRTYwMDAxMDE3ODY5Iiwic3ViIjoiRUU2MDAwMTAxNzg2OSIsImxhc3ROYW1lIjoiVEVTVE5VTUJFUiIsImlzcyI6ImFyZW5kdXMuZWVzdGkuZWUiLCJyZXByZXNlbnRlZFBhcnR5Ijp7ImNvZGUiOiJFRTYwMDAxMDE3ODY5IiwidHlwZSI6IkNJVElaRU4iLCJpZCI6MH0sImZpcnN0TmFtZSI6IkVJRDIwMTYiLCJuYmYiOjE2NzQ2MzM5NTEsImF1dGhlbnRpY2F0ZWRBcyI6IkVFNjAwMDEwMTc4NjkiLCJleHAiOjE2NzQ2MzU3NTEsImF1dGhNZXRob2QiOiJtSUQiLCJpYXQiOjE2NzQ2MzM5NTEsImdvdnNzb1NpZCI6IjM2ZWVmNjkwLThjMTMtNDU3Ni05MjVhLThlYjE3Y2E5MzAyZiIsImp0aSI6IjYzNWYyMjgyLTA4YmEtNDNjOC05MjBkLTE2YjU0YzY4N2FjYyIsImhhc2giOiI0ZGQyZGZhYzRhODg0NzZlOTkwNDk1OTQ3OTJmNTAyMzJlNDEwN2JkNWYyNDQ3OTRhYTZiOWE2MjhmNzE0NTAyIn0.cHL27RDdVBnx69MSGNyp2zaCNPyIAEXY5Qn9RDoJ0HPHIGLA02nIsWRSj3SAjf5oiDlxx0DCD81C2PInWblO_RTHP5fG9fk9SYb687eGuEg18OAQC3ZSox7x6PckqozCimF7cZI1ZCroj7g3vmBTKe_H6CTJBDPEndEIjSC0_fqJqU5rUNwli6u47GzJPfIssfCSEMMos5f0MZfuhhFzviFaCxh5ULKhrKkAkN_Wm1-ynx_tbtIC87VXY1qhZKmCeakeulyMkuPGFsYtSlvPMiWYgMymVdtvON9zSqKGI3XmSubxqFtU9cuhbtMEKdCBhjwjPjpd4EDHn0ZohLu4mw",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8103/event-service-admin-api/admin/v1/services/setup/versions/olala",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8103",
+							"path": [
+								"event-service-admin-api",
+								"admin",
+								"v1",
+								"services",
+								"setup",
+								"versions",
+								"olala"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8103/event-service-admin-api/admin/v1/services/setup/versions",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "_pk_id.48.7492=6d4f88a7f22c3d25.1660632290.; logged_out_marketing_header_id=eyJfcmFpbHMiOnsibWVzc2FnZSI6IklqTTBNVE14TVRFeUxXSmlNRGt0TkdGbE9DMWlaR1V4TFROak9XTXdOVGczT0RnME1pST0iLCJleHAiOm51bGwsInB1ciI6ImNvb2tpZS5sb2dnZWRfb3V0X21hcmtldGluZ19oZWFkZXJfaWQifX0%3D--8ec9fc902356cf2a09d3b4cfb5d4f041cfd89cd2; JWT_EXP_TIME=1669731576000; PHPSESSID=5ffcb98a502842f4bb5d70852c3854e5; JWTTOKEN=eyJhbGciOiJQUzI1NiJ9.eyJwZXJzb25hbENvZGUiOiJFRTYwMDAxMDE3ODY5Iiwic3ViIjoiRUU2MDAwMTAxNzg2OSIsImxhc3ROYW1lIjoiVEVTVE5VTUJFUiIsImlzcyI6ImFyZW5kdXMuZWVzdGkuZWUiLCJyZXByZXNlbnRlZFBhcnR5Ijp7InR5cGUiOiJDSVRJWkVOIiwiaWQiOjAsImNvZGUiOiJFRTYwMDAxMDE3ODY5In0sImZpcnN0TmFtZSI6IkVJRDIwMTYiLCJuYmYiOjE2NzI3NDY4NjcsImF1dGhlbnRpY2F0ZWRBcyI6IkVFNjAwMDEwMTc4NjkiLCJleHAiOjE2NzI3NDg2NjcsImF1dGhNZXRob2QiOiJtSUQiLCJpYXQiOjE2NzI3NDY4NjcsImdvdnNzb1NpZCI6IjI0Njc0MjFkLWUxMmYtNGQyYi05NmQ1LTJlODEwYWVlZjkxYiIsImp0aSI6ImYxMmM1YzNkLTc0NjAtNDQzNS1hMDk2LTA5MGU3YzlmOTE3OSIsImhhc2giOiJiMDc4YjBlZjdhYjQ0MWU5YjQyNzEzNjNjMGYxMDlmNGUyODg5MTMxNjc3MjRmNWI4Yjg2MWQ0Yzg1YmQ1MjAwIn0.EB2mhrtvdYkFUiCon8AV94Pkkc4NJF5VaMmbHx_HVasq_i-w53wQI01waQKILZG0J9WxrBoP-pYS8xiDdUvBXWIvBTBLuNTPTrxeK9HvgwyZz2O7hoUcI7Ud9iH_3BBVwdPH4d7f2mg7m30xKT7oPL5TAnuCtrQzjUU1nIxyaz5COC7WWUx0SaDXsMAZgRqFryrVoRLP0ozstuXdWjkDr77MAlu0It5PjFLIzsDGutgxuUVW0UUsLAQx2GT4l6_jPjjaWb3myz2EXaerlNGin5ErF5A0pBiteNR_nr0rRVMRBZuCXhZIZBDVFrMdPA6KDAUVRY_gqVI8nReeYL-nCA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8103/event-service-admin-api/admin/v1/services/setup/versions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8103",
+							"path": [
+								"event-service-admin-api",
+								"admin",
+								"v1",
+								"services",
+								"setup",
+								"versions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Andmevahetus",
+			"item": [
+				{
+					"name": "DEV kk",
+					"item": [
+						{
+							"name": "Testid X-road add-event (DEV kk)",
+							"item": [
+								{
+									"name": "T01_positive add_event abiellumine",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 201\", function () {\r",
+													"    pm.response.to.have.status(201);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T02_path parameter missing",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T03_incorrect endpoint - \"events\" is missing",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T04_invalid endpoint is used",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/event/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"event",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T05_json content is empty",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T06_json content is missing",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 415\", function () {\r",
+													"    pm.response.to.have.status(415);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T07_required element - personCode is missing in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T08_required element - personCode is empty in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T09_ required element - personCode is null in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": null,\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T10_required element - processId is missing json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T11_required element - processId has empty value in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T12_required element - processId has null value in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": null,\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T13_required element - processId has not UUID format in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"12cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T14_required element - event is missing in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T15_required element - event has empty value in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T16_required element - event has null value in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": null,\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T17_required element - eventDateTime has invalid format date value in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"202300-03-10T16:05:35.726Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T18_required element - eventDateTime is missing",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T19_required element - eventDateTime is null",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": null\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T20_required element - eventDateTime is empty",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T21_positive add_event nimevahetus",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 201\", function () {\r",
+													"    pm.response.to.have.status(201);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/nimevahetus",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"nimevahetus"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T22_not found service code test",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/nimevahetus1",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"nimevahetus1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T23_add_event - parendProcessID is null",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 201\", function () {\r",
+													"    pm.response.to.have.status(201);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": null,\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T24_add_event - parendProcessID is empty",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 201\", function () {\r",
+													"    pm.response.to.have.status(201);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T25_add_event - parendProcessID is missing",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 201\", function () {\r",
+													"    pm.response.to.have.status(201);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/GOV/70006317/sun-life-events/life-events/v1/events/abiellumine",
+											"protocol": "https",
+											"host": [
+												"xtee6-arendus",
+												"webmedia",
+												"int"
+											],
+											"path": [
+												"r1",
+												"ee-dev",
+												"GOV",
+												"70006317",
+												"sun-life-events",
+												"life-events",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Testid FindEventProcess (DEV kk)",
+							"item": [
+								{
+									"name": "T001_positive get event process",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 204\", function () {\r",
+													"    pm.response.to.have.status(204);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7306/event-service-orchestrator/internal/v1/events/processes?processId=cc55edda-7acd-4128-877d-02b94430896a&serviceCode=abiellumine&personCode=EE1234567890",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7306",
+											"path": [
+												"event-service-orchestrator",
+												"internal",
+												"v1",
+												"events",
+												"processes"
+											],
+											"query": [
+												{
+													"key": "processId",
+													"value": "cc55edda-7acd-4128-877d-02b94430896a"
+												},
+												{
+													"key": "serviceCode",
+													"value": "abiellumine"
+												},
+												{
+													"key": "personCode",
+													"value": "EE1234567890"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T01_process id has invalid value (too long)",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 500\", function () {\r",
+													"    pm.response.to.have.status(500);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7306/event-service-orchestrator/internal/v1/events/processes?processId=0055edda-7acd-4128-877d-02b94430896a11&serviceCode=abiellumine&personCode=EE1234567890",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7306",
+											"path": [
+												"event-service-orchestrator",
+												"internal",
+												"v1",
+												"events",
+												"processes"
+											],
+											"query": [
+												{
+													"key": "processId",
+													"value": "0055edda-7acd-4128-877d-02b94430896a11"
+												},
+												{
+													"key": "serviceCode",
+													"value": "abiellumine"
+												},
+												{
+													"key": "personCode",
+													"value": "EE1234567890"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T02_process id format check",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 500\", function () {\r",
+													"    pm.response.to.have.status(500);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7306/event-service-orchestrator/internal/v1/events/processes?processId=tekst&serviceCode=LAHUTUS&personCode=EE1234567891",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7306",
+											"path": [
+												"event-service-orchestrator",
+												"internal",
+												"v1",
+												"events",
+												"processes"
+											],
+											"query": [
+												{
+													"key": "processId",
+													"value": "tekst"
+												},
+												{
+													"key": "serviceCode",
+													"value": "LAHUTUS"
+												},
+												{
+													"key": "personCode",
+													"value": "EE1234567891"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T03_process id parameter has empty value",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 500\", function () {\r",
+													"    pm.response.to.have.status(500);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7306/event-service-orchestrator/internal/v1/events/processes?processId=&serviceCode=LAHUTUS&personCode=EE1234567891",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7306",
+											"path": [
+												"event-service-orchestrator",
+												"internal",
+												"v1",
+												"events",
+												"processes"
+											],
+											"query": [
+												{
+													"key": "processId",
+													"value": ""
+												},
+												{
+													"key": "serviceCode",
+													"value": "LAHUTUS"
+												},
+												{
+													"key": "personCode",
+													"value": "EE1234567891"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T04_person code parameter is missing",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 500\", function () {\r",
+													"    pm.response.to.have.status(500);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7306/event-service-orchestrator/internal/v1/events/processes?processId=0055edda-7acd-4128-877d-02b94430896a&serviceCode=LAHUTUS",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7306",
+											"path": [
+												"event-service-orchestrator",
+												"internal",
+												"v1",
+												"events",
+												"processes"
+											],
+											"query": [
+												{
+													"key": "processId",
+													"value": "0055edda-7acd-4128-877d-02b94430896a"
+												},
+												{
+													"key": "serviceCode",
+													"value": "LAHUTUS"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T05_person code has empty value",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 204\", function () {\r",
+													"    pm.response.to.have.status(204);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7306/event-service-orchestrator/internal/v1/events/processes?processId=0055edda-7acd-4128-877d-02b94430896a&serviceCode=LAHUTUS&personCode=",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7306",
+											"path": [
+												"event-service-orchestrator",
+												"internal",
+												"v1",
+												"events",
+												"processes"
+											],
+											"query": [
+												{
+													"key": "processId",
+													"value": "0055edda-7acd-4128-877d-02b94430896a"
+												},
+												{
+													"key": "serviceCode",
+													"value": "LAHUTUS"
+												},
+												{
+													"key": "personCode",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T06_service code is missing",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 500\", function () {\r",
+													"    pm.response.to.have.status(500);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7306/event-service-orchestrator/internal/v1/events/processes?processId=0055edda-7acd-4128-877d-02b94430896a&personCode=EE1234567891",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7306",
+											"path": [
+												"event-service-orchestrator",
+												"internal",
+												"v1",
+												"events",
+												"processes"
+											],
+											"query": [
+												{
+													"key": "processId",
+													"value": "0055edda-7acd-4128-877d-02b94430896a"
+												},
+												{
+													"key": "personCode",
+													"value": "EE1234567891"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T07_service code has empty value",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 204\", function () {\r",
+													"    pm.response.to.have.status(204);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:7306/event-service-orchestrator/internal/v1/events/processes?processId=0055edda-7acd-4128-877d-02b94430896a&personCode=EE1234567891&serviceCode=",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "7306",
+											"path": [
+												"event-service-orchestrator",
+												"internal",
+												"v1",
+												"events",
+												"processes"
+											],
+											"query": [
+												{
+													"key": "processId",
+													"value": "0055edda-7acd-4128-877d-02b94430896a"
+												},
+												{
+													"key": "personCode",
+													"value": "EE1234567891"
+												},
+												{
+													"key": "serviceCode",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Localhost tests",
+					"item": [
+						{
+							"name": "Testid FindEventProcess",
+							"item": [
+								{
+									"name": "T001_positive get event process",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 204\", function () {\r",
+													"    pm.response.to.have.status(204);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8106/event-service-orchestrator/internal/v1/events/processes?processId=cc55edda-7acd-4128-877d-02b94430896a&serviceCode=abiellumine&personCode=EE1234567890",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8106",
+											"path": [
+												"event-service-orchestrator",
+												"internal",
+												"v1",
+												"events",
+												"processes"
+											],
+											"query": [
+												{
+													"key": "processId",
+													"value": "cc55edda-7acd-4128-877d-02b94430896a"
+												},
+												{
+													"key": "serviceCode",
+													"value": "abiellumine"
+												},
+												{
+													"key": "personCode",
+													"value": "EE1234567890"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T01_process id has invalid value (too long)",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 500\", function () {\r",
+													"    pm.response.to.have.status(500);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8106/event-service-orchestrator/internal/v1/events/processes?processId=0055edda-7acd-4128-877d-02b94430896a11&serviceCode=LAHUTUS&personCode=EE1234567891",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8106",
+											"path": [
+												"event-service-orchestrator",
+												"internal",
+												"v1",
+												"events",
+												"processes"
+											],
+											"query": [
+												{
+													"key": "processId",
+													"value": "0055edda-7acd-4128-877d-02b94430896a11"
+												},
+												{
+													"key": "serviceCode",
+													"value": "LAHUTUS"
+												},
+												{
+													"key": "personCode",
+													"value": "EE1234567891"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T02_process id format check",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 500\", function () {\r",
+													"    pm.response.to.have.status(500);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8106/event-service-orchestrator/internal/v1/events/processes?processId=tekst&serviceCode=LAHUTUS&personCode=EE1234567891",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8106",
+											"path": [
+												"event-service-orchestrator",
+												"internal",
+												"v1",
+												"events",
+												"processes"
+											],
+											"query": [
+												{
+													"key": "processId",
+													"value": "tekst"
+												},
+												{
+													"key": "serviceCode",
+													"value": "LAHUTUS"
+												},
+												{
+													"key": "personCode",
+													"value": "EE1234567891"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T03_process id parameter has empty value",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 500\", function () {\r",
+													"    pm.response.to.have.status(500);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8106/event-service-orchestrator/internal/v1/events/processes?processId=&serviceCode=LAHUTUS&personCode=EE1234567891",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8106",
+											"path": [
+												"event-service-orchestrator",
+												"internal",
+												"v1",
+												"events",
+												"processes"
+											],
+											"query": [
+												{
+													"key": "processId",
+													"value": ""
+												},
+												{
+													"key": "serviceCode",
+													"value": "LAHUTUS"
+												},
+												{
+													"key": "personCode",
+													"value": "EE1234567891"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T04_person code parameter is missing",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 500\", function () {\r",
+													"    pm.response.to.have.status(500);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8106/event-service-orchestrator/internal/v1/events/processes?processId=0055edda-7acd-4128-877d-02b94430896a&serviceCode=LAHUTUS",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8106",
+											"path": [
+												"event-service-orchestrator",
+												"internal",
+												"v1",
+												"events",
+												"processes"
+											],
+											"query": [
+												{
+													"key": "processId",
+													"value": "0055edda-7acd-4128-877d-02b94430896a"
+												},
+												{
+													"key": "serviceCode",
+													"value": "LAHUTUS"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T05_person code has empty value",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 204\", function () {\r",
+													"    pm.response.to.have.status(204);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8106/event-service-orchestrator/internal/v1/events/processes?processId=0055edda-7acd-4128-877d-02b94430896a&serviceCode=LAHUTUS&personCode=",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8106",
+											"path": [
+												"event-service-orchestrator",
+												"internal",
+												"v1",
+												"events",
+												"processes"
+											],
+											"query": [
+												{
+													"key": "processId",
+													"value": "0055edda-7acd-4128-877d-02b94430896a"
+												},
+												{
+													"key": "serviceCode",
+													"value": "LAHUTUS"
+												},
+												{
+													"key": "personCode",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T06_service code is missing",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 500\", function () {\r",
+													"    pm.response.to.have.status(500);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8106/event-service-orchestrator/internal/v1/events/processes?processId=0055edda-7acd-4128-877d-02b94430896a&personCode=EE1234567891",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8106",
+											"path": [
+												"event-service-orchestrator",
+												"internal",
+												"v1",
+												"events",
+												"processes"
+											],
+											"query": [
+												{
+													"key": "processId",
+													"value": "0055edda-7acd-4128-877d-02b94430896a"
+												},
+												{
+													"key": "personCode",
+													"value": "EE1234567891"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T07_service code has empty value",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 204\", function () {\r",
+													"    pm.response.to.have.status(204);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8106/event-service-orchestrator/internal/v1/events/processes?processId=0055edda-7acd-4128-877d-02b94430896a&personCode=EE1234567891&serviceCode=",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8106",
+											"path": [
+												"event-service-orchestrator",
+												"internal",
+												"v1",
+												"events",
+												"processes"
+											],
+											"query": [
+												{
+													"key": "processId",
+													"value": "0055edda-7acd-4128-877d-02b94430896a"
+												},
+												{
+													"key": "personCode",
+													"value": "EE1234567891"
+												},
+												{
+													"key": "serviceCode",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Testid X-road add-event (Localhost)",
+							"item": [
+								{
+									"name": "T01_positive add_event abiellumine",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 201\", function () {\r",
+													"    pm.response.to.have.status(201);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T02_path parameter missing",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T03_incorrect endpoint - \"events\" is missing",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T04_invalid endpoint is used",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/event/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"event",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T05_json content is empty",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T06_json content is missing",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T07_required element - personCode is missing in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T08_required element - personCode is empty in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T09_ required element - personCode is null in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": null,\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T10_required element - processId is missing json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T11_required element - processId has empty value in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T12_required element - processId has null value in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": null,\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T13_required element - processId has not UUID format in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"12cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T14_required element - event is missing in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T15_required element - event has empty value in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T16_required element - event has null value in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": null,\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T17_required element - eventDateTime has invalid format date value in json",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"202300-03-10T16:05:35.726Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T18_required element - eventDateTime is missing",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T19_required element - eventDateTime is null",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": null\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T20_required element - eventDateTime is empty",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "accept",
+												"value": "*/*",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T21_positive add_event nimevahetus",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 201\", function () {\r",
+													"    pm.response.to.have.status(201);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/nimevahetus",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"nimevahetus"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T22_not found service code test",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/nimevahetus1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"nimevahetus1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T23_add_event - parendProcessID is null",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 201\", function () {\r",
+													"    pm.response.to.have.status(201);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": null,\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T24_add_event - parendProcessID is empty",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 201\", function () {\r",
+													"    pm.response.to.have.status(201);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"parentProcessId\": \"\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "T25_add_event - parendProcessID is missing",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 201\", function () {\r",
+													"    pm.response.to.have.status(201);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "X-Road-Client",
+												"value": "ee-dev/COM/10391131/event-service-gateway",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"personCode\": \"EE1234567890\",\r\n    \"personRole\": \"AVALDAJA\",\r\n    \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\r\n    \"event\": \"AVALDUS_ESITATUD\",\r\n    \"eventDateTime\": \"2023-03-21T09:36:51.831Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/abiellumine",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8105",
+											"path": [
+												"event-service-xroad-gateway",
+												"v1",
+												"events",
+												"abiellumine"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Read message sent from orchestrator",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8106/event-service-orchestrator/internal/v1/events/processes?processId=0055edda-7acd-4128-877d-02b94430896a&serviceCode=LAHUTUS&personCode=EE1234567891",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8106",
+							"path": [
+								"event-service-orchestrator",
+								"internal",
+								"v1",
+								"events",
+								"processes"
+							],
+							"query": [
+								{
+									"key": "processId",
+									"value": "0055edda-7acd-4128-877d-02b94430896a"
+								},
+								{
+									"key": "serviceCode",
+									"value": "LAHUTUS"
+								},
+								{
+									"key": "personCode",
+									"value": "EE1234567891"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Xroad-gateway message sending to orchestrator api",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n                            \"personCode\": \"EE1234567890\",\n                            \"personRole\": \"AVALDAJA\",\n                            \"processId\": \"cc55edda-7acd-4128-877d-02b94430896a\",\n                            \"parentProcessId\": \"ec138a49-b141-418c-b1bc-8cd3f1ecd31c\",\n                            \"event\": \"AVALDUS_ESITATUD\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8105/event-service-xroad-gateway/v1/events/ABIELLUMINE",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8105",
+							"path": [
+								"event-service-xroad-gateway",
+								"v1",
+								"events",
+								"ABIELLUMINE"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "https://xtee6-arendus.webmedia.int/r1/ee-dev/COM/10391131/event-service-adapter-test1/testapi/adapter/v1/messages",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Road-Client",
+						"value": "ee-dev/COM/10391131/event-service-adapter-test2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"messageId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"messageType\": \"name_changed\",\r\n  \"eventId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"personCode\": \"string\",\r\n  \"timestamp\": \"2022-05-24T10:53:31.338Z\",\r\n  \"link\": \"string\",\r\n  \"content\": {\r\n    \"additionalProp1\": {},\r\n    \"additionalProp2\": {},\r\n    \"additionalProp3\": {}\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/COM/10391131/event-service-adapter-test1/testapi/adapter/v1/messages",
+					"protocol": "https",
+					"host": [
+						"xtee6-arendus",
+						"webmedia",
+						"int"
+					],
+					"path": [
+						"r1",
+						"ee-dev",
+						"COM",
+						"10391131",
+						"event-service-adapter-test1",
+						"testapi",
+						"adapter",
+						"v1",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://xtee6-arendus.webmedia.int/r1/ee-dev/COM/10391131/event-service-gateway/gateway/gateway/v1/messages",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Road-Client",
+						"value": "ee-dev/COM/10391131/event-service-adapter-test2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"messageId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"messageType\": \"test\",\r\n  \"eventId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"personCode\": \"string\",\r\n  \"timestamp\": \"2022-05-24T10:53:31.338Z\",\r\n  \"link\": \"string\",\r\n  \"content\": {\r\n    \"additionalProp1\": {},\r\n    \"additionalProp2\": {},\r\n    \"additionalProp3\": {}\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://xtee6-arendus.webmedia.int/r1/ee-dev/COM/10391131/event-service-gateway/gateway/gateway/v1/messages",
+					"protocol": "https",
+					"host": [
+						"xtee6-arendus",
+						"webmedia",
+						"int"
+					],
+					"path": [
+						"r1",
+						"ee-dev",
+						"COM",
+						"10391131",
+						"event-service-gateway",
+						"gateway",
+						"gateway",
+						"v1",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
